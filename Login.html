@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Star Writers</title>
+    <style>
+        /* Your existing login page styles can go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #0074cc;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #0074cc;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0074cc;
+            text-align: center;
+        }
+
+        /* Centering the login form and buttons */
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #0074cc;
+        }
+
+        form input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #0074cc;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Centering the "Not registered yet?" message */
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login to Star Writers</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Login</h2>
+            <form>
+                <label for="emailaddress">Email address:</label>
+                <input type="text" id="emailaddress" name="emailaddress" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+
+            <p>Not registered yet? <a href="signup.html">Register with us</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Star Writers. All rights reserved.</p>
+    </footer>
+</body>
+</html>

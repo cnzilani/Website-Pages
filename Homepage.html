@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Writers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #0074cc;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #0074cc;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2 {
+            color: #0074cc;
+        }
+
+        nav {
+            /* Remove text-align: right; */
+            margin-bottom: 20px;
+        }
+
+        .menu-button,
+        .menu-info {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .menu-button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            text-align: left;
+            /* Set left to 0 to align with the left side of the button */
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .menu-info {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Star Writers</h1>
+        <p>Your platform for creative expression</p>
+    </header>
+
+    <section>
+        <nav>
+            <div class="dropdown">
+                <button class="menu-button">Menu &#9776;</button>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <button onclick="location.href='login.html'">Login</button>
+                    <button onclick="location.href='signup.html'">Sign Up</button>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy and Policy</a>
+                    <a href="#">Terms and Services</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+
+        <section>
+            <h2>About Us</h2>
+            <p>Embark on a seamless academic voyage with Star Writers, your beacon to brilliance! Elevate your grades and conquer challenges as we meticulously craft assignments and semester projects. Our dedicated team of experts guarantees excellence, ensuring your success story is written with every project. Trust Star Writers to unlock your full academic potential and make your educational journey extraordinary.</p>
+        </section>
+
+        <section>
+            <h2>Our Services</h2>
+            <p>Explore a comprehensive array of academic services offered by Star Writers to support your learning journey:</p>
+            <ul>
+                <li><strong>Computer Science:</strong> Delve into the intricate world of computer science with our expert assistance. Whether you're grappling with programming languages, algorithms, or software development, our skilled tutors are here to guide you. We provide tailored solutions to enhance your understanding and proficiency in this dynamic field.</li>
+
+                <li><strong>Essay Writing:</strong> Elevate your essay writing skills with the help of our seasoned writers. From crafting compelling thesis statements to refining your prose, we assist you in producing well-researched and articulate essays across various subjects. Our goal is to nurture your ability to communicate ideas effectively through the written word.</li>
+
+                <li><strong>Statistics:</strong> Navigate the complexities of statistics with confidence. Our experienced statisticians offer support in data analysis, hypothesis testing, and interpretation of results. Whether you're working on research projects or class assignments, we ensure that you grasp statistical concepts and apply them with precision.</li>
+
+                <li><strong>Homework:</strong> Experience stress-free homework completion across diverse subjects. Our team of tutors is ready to assist you with daily assignments, ensuring accurate and thorough solutions. By collaborating with Star Writers, you can efficiently manage your workload and focus on understanding key concepts.</li>
+
+                <li><strong>Economics:</strong> Master economic principles with our dedicated experts. From macroeconomics to microeconomics, we provide comprehensive guidance to enhance your understanding of economic theories and their real-world applications. Excel in your economics assignments with the support of our knowledgeable tutors.</li>
+
+                <li><strong>Engineering:</strong> Tackle engineering challenges confidently with our specialized assistance. Whether you're working on projects, calculations, or problem-solving tasks, our team of engineering experts is committed to helping you succeed. Benefit from our practical insights and boost your proficiency in various engineering disciplines.</li>
+
+                <li><strong>Accounting:</strong> Navigate the intricacies of accounting principles with ease. Our accounting professionals offer personalized support to help you grasp concepts such as financial reporting, auditing, and taxation. Excel in your accounting assignments and build a solid foundation for future success in the field.</li>
+
+                <li><strong>Chemistry:</strong> Dive into the world of chemistry with our expert guidance. Whether you're studying organic, inorganic, or physical chemistry, our experienced tutors provide detailed explanations and practical insights. Conquer complex chemical concepts and excel in your chemistry assignments with Star Writers.</li>
+
+                <li><strong>Biology:</strong> Explore the wonders of biology with support from our experienced biologists. From understanding cellular processes to exploring ecosystems, our tutors offer comprehensive assistance. Excel in your biology assignments and develop a deep appreciation for the diverse and fascinating world of living organisms.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Join Us</h2>
+            <p>Why Join Us:
+                Access to a diverse group of knowledgeable tutors and peers.
+                Real-time help for your academic queries.
+                Engage in meaningful discussions and exchange ideas.
+                Build a network of like-minded individuals who share a passion for learning.</p>
+        </section>
+        <section class="get-started-section">
+            <h2>Get Started</h2>
+            <p>Unlock your academic excellence with Star Writers – Your trusted partner for impeccable assignments and semester projects, ensuring top-notch grades and stress-free success!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Star Writers. All rights reserved.</p>
+    </footer>
+</body>
+</html>
