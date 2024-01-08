@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Star Writers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #0074cc;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #0074cc;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        section {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #0074cc;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left; /* Align form content to the left */
+        }
+
+        label {
+            display: block; /* Ensure each label is on a new line */
+            margin-bottom: 5px; /* Adjust as needed */
+        }
+
+        input {
+            width: 100%; /* Make inputs fill the container width */
+            box-sizing: border-box; /* Include padding and border in the width */
+            padding: 8px; /* Add some padding for better appearance */
+            margin-bottom: 10px; /* Adjust as needed */
+        }
+
+        form button {
+            margin-top: 10px; /* Move the button below the inputs */
+        }
+
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sign Up for Star Writers</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Sign Up</h2>
+            <form onsubmit="return validateForm()">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+                <p class="error-message" id="passwordError"></p>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Star Writers. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                document.getElementById("passwordError").innerText = "Passwords do not match";
+                return false;
+            } else {
+                document.getElementById("passwordError").innerText = "";
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
