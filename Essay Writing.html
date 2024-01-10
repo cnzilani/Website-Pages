@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Writing - Star Writers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #2585f3;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            margin-bottom: 80px;
+        }
+
+        footer {
+            background-color: #5da1d5;
+            color: #fff;
+            padding: 0 em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer section {
+            text-align: center;
+        }
+
+        footer section p {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2 {
+            color: #2d05e2;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        .menu-button,
+        .menu-info {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .menu-button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .menu-info {
+            margin-left: 20px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 50%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Star Writers</h1>
+        <p>Your platform for creative expression</p>
+    </header>
+
+    <section>
+        <nav>
+            <div class="dropdown">
+                <button class="menu-button">Menu &#9776;</button>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <button onclick="location.href='login.html'">Login</button>
+                    <button onclick="location.href='signup.html'">Sign Up</button>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy and Policy</a>
+                    <a href="#">Terms and Services</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+
+        <section>
+            <h2>Essay Writing</h2>
+            <p>Provide the details for your Essay Writing assignment:</p>
+            <form>
+                <label for="number_of_pages">Number of Pages:</label>
+                <input type="number" id="number_of_pages" name="number_of_pages" required>
+
+                <label for="due_date">Due Date:</label>
+                <input type="date" id="due_date" name="due_date" required>
+
+                <label for="due_time">Due Time:</label>
+                <input type="time" id="due_time" name="due_time" required>
+
+                <label for="budget_amount">Budget Amount:</label>
+                <input type="text" id="budget_amount" name="budget_amount" required>
+
+                <label for="additional_info">Additional Information:</label>
+                <textarea id="additional_info" name="additional_info"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <h2>Contact Us</h2>
+            <p><i class="fab fa-whatsapp"></i> WhatsApp: +254768419581</p>
+            <p><i class="far fa-envelope"></i> Email: essaywritershelp04@gmail.com</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>
