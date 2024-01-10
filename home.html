@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Writers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Star Writers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #2585f3;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            margin-bottom: 80px; /* Increase margin-bottom to accommodate the footer */
+
+        }
+
+        footer {
+            background-color: #5da1d5;
+            color: #fff;
+            padding: 0 em;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+        }
+
+         footer section {
+            text-align: center;
+        }
+
+        footer section p {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        section {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        h2 {
+            color: #2d05e2;
+        }
+
+        nav {
+            margin-bottom: 20px;
+        }
+
+        .menu-button,
+        .menu-info {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .menu-button {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-align: left;
+            left: 0;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .menu-info {
+            margin-left: 20px;
+        }
+
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .service {
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        html, body {
+            height: 100%;
+            overflow: auto;
+        footer section p i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Star Writers</h1>
+        <p>Your platform for creative expression</p>
+    </header>
+
+    <section>
+        <nav>
+            <div class="dropdown">
+                <button class="menu-button">Menu &#9776;</button>
+                <div class="dropdown-content">
+                    <a href="#">Home</a>
+                    <button onclick="location.href='login.html'">Login</button>
+                    <button onclick="location.href='signup.html'">Sign Up</button>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy and Policy</a>
+                    <a href="#">Terms and Services</a>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+
+        <section>
+            <h2>About Us</h2>
+            <p>Embark on a seamless academic voyage with Star Writers, your beacon to brilliance! Elevate your grades and conquer challenges as we meticulously craft assignments and semester projects. Our dedicated team of experts guarantees excellence, ensuring your success story is written with every project. Trust Star Writers to unlock your full academic potential and make your educational journey extraordinary.</p>
+        </section>
+
+                <section>
+                    <h2>Why Join Us?</h2>
+                    <ol>
+                        <li>Access to a diverse group of knowledgeable tutors and peers.</li>
+                        <li>Real-time help for your academic queries.</li>
+                        <li>Engage in meaningful discussions and exchange ideas.</li>
+                        <li>Build a network of like-minded individuals who share a passion for learning.</li>
+                    </ol>
+                </section>
+
+        <section class="get-started-section">
+            <h2>Get Started</h2>
+            <p>Unlock your academic excellence with Star Writers – Your trusted partner for impeccable assignments and semester projects, ensuring top-notch grades and stress-free success!</p>
+        </section>
+    </main>
+
+    <footer>
+          <section>
+            <h2>Our Services</h2>
+            <p>Explore a comprehensive array of academic services offered by Star Writers to support your learning journey:</p>
+
+            <div class="service-container">
+                <div class="service">
+                    <strong><a href="#">Computer Science</a></strong>
+                </div>
+
+                <div class="service">
+                    <strong><a href="#">Essay Writing</a></strong>
+                </div>
+
+                <div class="service">
+                    <strong><a href="#">Statistics</a></strong>
+                </div>
+            </div>
+
+            <div class="service-container">
+                <div class="service">
+                     <strong><a href="#">Corporate Finance</a></strong>
+                </div>
+
+                <div class="service">
+                      <strong><a href="#">Economics</a></strong>
+                </div>
+
+                <div class="service">
+                      <strong><a href="#">Engineering</a></strong>
+                </div>
+            </div>
+
+            <div class="service-container">
+                <div class="service">
+                      <strong><a href="#">Accounting</a></strong>
+                </div>
+
+                <div class="service">
+                      <strong><a href="#">Chemistry</a></strong>
+                </div>
+
+                <div class="service">
+                      <strong><a href="#">Biology</a></strong>
+                </div>
+            </div>
+          <div class="service-container">
+              <div class="service">
+                  <strong><a href="#">Programming</a></strong>
+              </div>
+              <div class="service">
+                  <strong><a href="#">Data Science and Big data</a></strong>
+              </div>
+              <div class="service">
+                <strong><a href="#">Data Mining and Visualization</a></strong>
+                </div>
+          </div>
+
+          <div class="service-container">
+              <div class="service">
+                  <strong><a href="#">Database Systems</a></strong>
+              </div>
+              <div class="service">
+                  <strong><a href="#">Cloud Computing</a></strong>
+              </div>
+              <div class="service">
+                  <strong><a href="#">Mobile Application</a></strong>
+              </div>
+          </div>
+          </section>
+            <h2>Contact Us</h2>
+            <p><i class="fab fa-whatsapp"></i> WhatsApp: +254768419581</p>
+            <p><i class="far fa-envelope"></i> Email: essaywritershelp04@gmail.com</p>
+        </section>
+    </footer
+</body>
+</html>
